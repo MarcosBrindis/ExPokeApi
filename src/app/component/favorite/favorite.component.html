@@ -1,0 +1,4 @@
+<p *ngIf="favorites.length === 0">No favorites selected</p>
+<ul *ngIf="favorites.length > 0">
+  <li *ngFor="let favorite of favorites">{{ favorite.name }} - {{ favorite.url }}</li>
+</ul>

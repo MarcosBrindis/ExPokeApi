@@ -1,0 +1,7 @@
+<!-- Tabla de productos -->
+<app-table [products]="dataSource" (favoriteChange)="updateFavorites($event)"></app-table>
+
+<!-- Lista de favoritos -->
+<app-favorite [favorites]="favorites"></app-favorite>
+
+<router-outlet></router-outlet>
